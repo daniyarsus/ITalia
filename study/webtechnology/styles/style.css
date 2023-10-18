@@ -1,0 +1,80 @@
+html, body, h1, h2, h3, h4, p, ul, li, a {
+   font-family: Georgia;
+   font-size: 100%;
+   font-weight: 400;
+   color: #808080;
+   margin: 0;
+   padding: 0;
+}
+
+.head {
+    border-style: dashed;
+    border-color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow;
+    padding: 60px
+}
+
+h1, h2, h3, h4 {
+   font-weight: 800;
+   color: #000;
+   padding: 10px 30px 10px 30px
+}
+
+h1 {
+   font-size: 2em;
+   text-align: center;
+   padding: 30px 30px 40px;
+}
+
+h2 {
+   font-size: 1.5em;
+}
+
+h3 {
+   font-size: 1.3em;
+}
+
+h4 {
+   font-size: 1.1em;
+}
+
+p {
+   padding: 10px 30px 10px 30px;
+   font-size: 0.9em;
+}
+
+.navigator {
+   background: #eee;
+   margin: 10px 40px;
+   padding: 10px 30px;
+   overflow: auto;
+   white-space: nowrap; /*удаление переноса текста отступа*/
+}
+
+.navigator p {
+    display: inline; /*сточные элементы*/
+    margin: 0; /*удаление внутреннего отступа*/
+}
+
+.navigator a {
+    text-decoration: none; /*удаление подчеркивание под ссылками*/
+    padding: 5px 10px; /*отступы вокруг текста ссылок*/
+    margin-right: 10px; /*отступ между ссылками*/
+}
+
+.navigator a:hover {
+    background-color: #ddd;
+}
+
+
+li {
+   list-style: square;
+   line-height: 1.8em;
+   float: left;
+}
+
+.image {
+   float: right;
+   margin: 10px 40px;
+   padding: 20px 20 px 20 px 20 px;
+}

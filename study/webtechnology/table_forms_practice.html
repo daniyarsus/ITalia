@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Style Guide</title>
+</head>
+
+<body>
+    <h1>CSS Style Guide</h1>
+
+    <p style="font-size: 16px;">The purpose of this document is to quckly show the CSS styles for all of the important HTML Elements in your website.</p>
+
+    <hr>
+
+    <h1>Headings</h1>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr>
+
+    <h1>Paragraph</h1>
+
+    <p style="font-size: 16px;">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+
+    <p style="font-size: 16px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium <b>(This is bold text)</b>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+    <p style="font-size: 16px;">At vero eos et accusamus et iusto odio <i>(This is italic text)</i> dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+
+    <hr>
+
+    <h1>List Types</h1>
+
+    <h3>Definition List</h3>
+
+    <dl>
+        <dt>Definiton List Ttile</dt>
+        <dd>This is a definition dist divison</dd>
+    </dl>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ul>
+
+    <hr>
+
+    <h1>Form Elements</h1>
+
+    <form>
+
+        <fieldset>
+
+        <legend>Legend</legend>
+
+            <p style="font-size: 16px;">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Dones faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quiss luctus fermentium, turpismi volutpat justo, eu volutpat enim diam eget metus.</p>
+
+        <h2>Form Elements</h2>
+
+            <p style="font-size: 16px;">Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Dones faucibus. Nunc iaculis suscipit dui.</p>
+
+        <p>
+            <label for="text_field">Text Field:</label>
+            <br>
+            <input type="text" name="text_field">
+        </p>
+
+        <p>
+            <label for="text_area">Text Area:</label>
+            <br>
+            <textarea name="text_area"></textarea>
+        </p>
+
+        <p>
+            <label for="radio_button">Radio Buttons:</label>
+            <br>
+            <input type="radio" name="radio_button" value="radio_1">Radio 1<br>
+            <input type="radio" name="radio_button" value="radio_2">Radio 2<br>
+            <input type="radio" name="radio_button" value="radio_3">Radio 3<br>
+        </p>
+
+        <p>
+            <label for="checkboxes">Checkboxes:</label>
+            <br>
+            <input type="checkbox" name="checkbox" value="checkbox_1">Checkbox 1<br>
+            <input type="checkbox" name="checkbox" value="checkbox_2">Checkbox 2<br>
+            <input type="checkbox" name="checkbox" value="checkbox_3">Checkbox 3<br>
+        </p>
+
+        <p>
+            <label for="select_element">Select Element:</label>
+            <br>
+            <select name="select_element">
+                <optgroup label="Option Group 1">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </optgroup>
+                <optgroup label="Option Group 2">
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                    <option value="6">Option 6</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" name="password">
+        </p>
+
+        <p>
+            <label for="file">File:</label>
+            <br>
+            <input type="file" name="file">
+        </p>
+
+        <p>
+            <label for="reset">Reset:</label>
+            <br>
+            <input type="reset" name="reset">
+        </p>
+
+        <p>
+            <label for="submit">Submit:</label>
+            <br>
+            <input type="submit" name="submit">
+        </p>
+
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h1>Table Example</h1>
+
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <th>Table Header 1</th>
+            <th>Table Header 2</th>
+            <th>Table Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>Extra Tags - abbr, cite, sub, sup, small</h1>
+
+    <p style="font-size: 16px;">Lorem dolor, consectetuer adipiscing elit. <abbr>(This is an Abbr)</abbr> Nullam dignissim convallis est. Quisque <cite>(This is a citation)</cite> aliquam. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, <sub>(This is subscript text)</sub>imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, <sup>(This is superscript text)</sup> massa quis luctus fermentum, turpis mi volupat just, <small>(This is small text)</small> eu volupat enim diam eget metus.</p>
+
+    <blockquote>
+        <p style="font-size: 16px;">"This styleguide can be a very useful tool."<br>—Blockquote</p>
+    </blockquote>
+
+</body>
+
+</html>
