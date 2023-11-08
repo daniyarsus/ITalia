@@ -1,6 +1,6 @@
 html
 {
-   background: #2f4054;
+   background: #800080;
 }
 title
 {
@@ -11,8 +11,8 @@ title
 .column
 {
    float: left;
-   width: 180px;
-   padding: 0 0 0 10px;
+   width: 280px;
+   padding: 0 0 0 140px;
    border-right: 2px solid #777;
    top: 250px;
 }
@@ -32,7 +32,7 @@ header
 nav
 {
    width: 100% ;
-   background: #2f4054;
+   background: #800080;
    position: absolute;
    left: 0px;
    bottom: auto;
@@ -157,3 +157,8 @@ main
 .f1{
   width: 260px;
 }
+
+body {
+  overflow-x: hidden;
+}
+

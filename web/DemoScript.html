@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Событие onclick</title>
+  <script>
+   function isEmail() {
+     var str = document.getElementById("email").value;
+     var status = document.getElementById("status");
+     var re = "Hello World!";
+
+     if(isEmpty(str)) {
+       status.innerHTML = re;
+     } else {
+       status.innerHTML = str;
+     }
+   }
+   function isEmpty(str){
+    return (str == null) || (str.length == 0);
+   }
+
+function send() {
+      var settings = {
+       "url": "http://127.0.0.1:5000/post/1",
+       "method": "GET",
+       "timeout": 0,
+     };
+
+     $.ajax(settings).done(function (response) {
+      // response - это распарсенный JSON-ответ
+      // Можно получить доступ к различным свойствам объекта response
+      var repositoryName = response.name;
+      var isPrivate = response.private;
+
+      // Далее можно выполнять необходимую обработку с этими данными
+      console.log("Repository Name: " + repositoryName);
+      document.getElementById("email").value = repositoryName;
+      console.log("Is Private: " + isPrivate);
+    });
+   }
+  </script>
+ </head>
+ <body>
+  <form action="">
+   <p>Введите адрес электронной почты и нажмите кнопку &laquo;Проверить&raquo;</p>
+   <p><input type="text" id="email"> <span id="status"></span></p>
+   <p><input type="button" value="Проверить" onclick="isEmail()"></p>
+
+    <p><input type="text" id="name"></p>
+   <p><input type="button" value="Отправить" onclick="send()"></p>
+  </form>
+ </body>
+</html>
